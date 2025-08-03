@@ -61,7 +61,7 @@ export default function SignupPage() {
     try {
       await signup(formData);
       router.push('/dashboard');
-    } catch (err) {
+    } catch (_err) {
       setError('Failed to create account. Please try again.');
     }
   };

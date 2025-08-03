@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
@@ -72,21 +71,21 @@ export default function Home() {
     return [
       {
         id: 1,
-        name: location === 'Philippines' ? "Aling Maria's Sari-Sari Store" : "Maria's Filipino Store",
+        name: location === 'Philippines' ? "Aling Maria's Sari-Sari Store" : "Maria&apos;s Filipino Store",
         location: locationData?.cities[0] || "Quezon City",
         country: location,
         image: "🏪"
       },
       {
         id: 2,
-        name: location === 'Philippines' ? "Kuya Juan's Neighborhood Store" : "Juan's Filipino Market",
+        name: location === 'Philippines' ? "Kuya Juan's Neighborhood Store" : "Juan&apos;s Filipino Market",
         location: locationData?.cities[1] || "Makati",
         country: location,
         image: "🛒"
       },
       {
         id: 3,
-        name: location === 'Philippines' ? "Nanay's Corner Store" : "Nanay's Filipino Corner",
+        name: location === 'Philippines' ? "Nanay's Corner Store" : "Nanay&apos;s Filipino Corner",
         location: locationData?.cities[2] || "Manila",
         country: location,
         image: "🏪"
