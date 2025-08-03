@@ -14,7 +14,7 @@ interface User {
 interface AuthContextType {
   user: User | null;
   login: (email: string, password: string) => Promise<void>;
-  signup: (userData: unknown) => Promise<void>;
+  signup: (userData: any) => Promise<void>;
   logout: () => void;
   isLoading: boolean;
   isAuthenticated: boolean;
@@ -67,7 +67,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   };
 
-  const signup = async (userData: unknown) => {
+  const signup = async (userData: any) => {
     setIsLoading(true);
     try {
       // TODO: Replace with actual API call

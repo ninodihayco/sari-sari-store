@@ -71,7 +71,7 @@ export default function PalengkePage() {
     },
     {
       id: 3,
-      name: "Tatay Pedro's Fish",
+      name: "Tatay Pedro Fish",
       category: "meat",
       products: ["Bangus", "Tilapia", "Galunggong", "Tuna"],
       location: "Taguig Community Market",

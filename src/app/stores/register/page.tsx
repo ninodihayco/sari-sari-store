@@ -15,7 +15,7 @@ export default function StoreRegistrationPage() {
     barangay: '',
     category: '',
     description: '',
-    specialties: [],
+    specialties: [] as string[],
     hours: {
       monday: { open: '6:00', close: '22:00', closed: false },
       tuesday: { open: '6:00', close: '22:00', closed: false },

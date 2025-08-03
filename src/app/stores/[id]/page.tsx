@@ -3,13 +3,13 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
-export default function StoreDetailPage({ params }: { params: { id: string } }) {
+export default async function StoreDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const [activeTab, setActiveTab] = useState('products');
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   // Mock store data - in real app, fetch by ID
   const store = {
-    id: parseInt(params.id),
+    id: parseInt((await params).id),
     name: "Aling Maria's Sari-Sari Store",
     owner: "Maria Santos",
     location: "Quezon City",
