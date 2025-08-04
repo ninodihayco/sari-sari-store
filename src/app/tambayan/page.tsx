@@ -215,6 +215,9 @@ export default function TambayanPage() {
               <Link href="/" className="bg-red-600 text-white px-3 py-1 rounded-lg hover:bg-red-700 transition-colors text-sm font-medium" title="Go to Home">
                 🏠 Home
               </Link>
+              <div className="bg-yellow-400 text-black px-2 py-1 rounded text-xs font-bold">
+                TEST - CHANGES WORKING!
+              </div>
               <h1 className="text-2xl font-bold text-gray-900">Tambayan</h1>
               <div className="flex items-center space-x-2">
                 <span className="text-sm text-gray-600">📍 {currentLocation}</span>
